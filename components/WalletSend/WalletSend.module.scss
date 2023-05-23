@@ -1,0 +1,57 @@
+@use "sass:math";
+
+.link {
+  color: #1F8FEB;
+}
+
+.label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: math.div(21, 18);
+  color: #1F8FEB;
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+.sendForm {
+  display: grid;
+  row-gap: 16px;
+  padding-bottom: 20px;
+}
+
+// =========================================================
+.transactionContent {
+  min-height: 410px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translate(0, -30px);
+}
+
+.transactionIcon {
+  width: 130px;
+  height: 130px;
+  margin: 0 auto 8px auto;
+  img {
+    max-width: 100%;
+  }
+}
+
+.transactionText {
+  text-align: center;
+  word-break: break-all;
+  font-size: 18px;
+  margin: 0 15px;
+  line-height: 1.4;
+  span {
+    margin-top: 5px;
+    display: block;
+    font-size: 16px;
+  }
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
